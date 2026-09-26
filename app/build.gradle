@@ -1,0 +1,19 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.never0802.acms'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.never0802.acms'
+        minSdk 26
+        targetSdk 35
+        versionCode 6
+        versionName '2026.09.26.6'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}

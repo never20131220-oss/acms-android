@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widgetRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/widget_bg"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ACMS 작업현황"
+            android:textColor="@color/widget_text"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/widgetRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="↻"
+            android:textColor="@color/widget_text"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:id="@+id/widgetWaiting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/widget_chip"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="6dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="대기" android:textColor="@color/widget_muted" android:textStyle="bold" android:textSize="11sp" />
+            <TextView android:id="@+id/widgetWaitingCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:textColor="@color/widget_text" android:textStyle="bold" android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/widgetField"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/widget_chip"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="6dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="현장이동" android:textColor="@color/widget_muted" android:textStyle="bold" android:textSize="11sp" />
+            <TextView android:id="@+id/widgetFieldCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:textColor="@color/widget_text" android:textStyle="bold" android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/widgetPlan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/widget_chip"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="6dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="계획작업" android:textColor="@color/widget_muted" android:textStyle="bold" android:textSize="11sp" />
+            <TextView android:id="@+id/widgetPlanCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:textColor="@color/widget_text" android:textStyle="bold" android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/widgetUpdated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text="로그인 후 위젯을 새로고침하세요"
+        android:textColor="@color/widget_muted"
+        android:textSize="9sp"
+        android:gravity="end" />
+</LinearLayout>

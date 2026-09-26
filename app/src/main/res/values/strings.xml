@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ACMS</string>
+    <string name="widget_name">ACMS 작업현황</string>
+    <string name="shortcut_waiting_short">대기</string>
+    <string name="shortcut_waiting_long">AS 대기 바로가기</string>
+    <string name="shortcut_field_short">현장</string>
+    <string name="shortcut_field_long">내 현장이동 바로가기</string>
+    <string name="shortcut_plan_short">계획</string>
+    <string name="shortcut_plan_long">계획작업 바로가기</string>
+</resources>

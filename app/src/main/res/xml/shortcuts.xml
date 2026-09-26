@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="waiting"
+        android:enabled="true"
+        android:icon="@drawable/acms_icon"
+        android:shortcutShortLabel="@string/shortcut_waiting_short"
+        android:shortcutLongLabel="@string/shortcut_waiting_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.never0802.acms"
+            android:targetClass="com.never0802.acms.MainActivity"
+            android:data="acms://waiting" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="field"
+        android:enabled="true"
+        android:icon="@drawable/acms_icon"
+        android:shortcutShortLabel="@string/shortcut_field_short"
+        android:shortcutLongLabel="@string/shortcut_field_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.never0802.acms"
+            android:targetClass="com.never0802.acms.MainActivity"
+            android:data="acms://field" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="plan"
+        android:enabled="true"
+        android:icon="@drawable/acms_icon"
+        android:shortcutShortLabel="@string/shortcut_plan_short"
+        android:shortcutLongLabel="@string/shortcut_plan_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.never0802.acms"
+            android:targetClass="com.never0802.acms.MainActivity"
+            android:data="acms://plan" />
+    </shortcut>
+</shortcuts>
